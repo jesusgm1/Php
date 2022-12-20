@@ -1,0 +1,38 @@
+<?php
+require_once 'classes/Animal.php';
+require_once 'classes/Mamifero.php';
+require_once 'classes/Ave.php';
+require_once 'classes/Pinguino.php';
+require_once 'classes/Canario.php';
+require_once 'classes/Gato.php';
+require_once 'classes/Perro.php';
+echo "con la clase animal";
+echo "<br>";
+$animal = new Animal();
+echo $animal . "<br>";
+echo "clase mamifero y ave";
+echo "<br>";
+$mamifero = new Mamifero("naranja", "tigre", 4);
+echo $mamifero . "<br>";
+$ave = new Ave("negro", "cuervo", 2, true);
+echo $ave . "<br>";
+$ave->volar();
+echo "<br>";
+echo "con perro,pinguino,gato y canario";
+$pentarou = new Pinguino("negro", "emperador", 2);
+echo $pentarou . "<br>";
+$pentarou->nadar();
+echo "<br>";
+$tauros = new Canario("amarillo", "canario", 2, false);
+echo $tauros . "<br>";
+$tauros->volar();
+echo "<br>";
+$garfield = new Gato("naranja","persa",4);
+echo $garfield . "<br>";
+$garfield->maulla();
+echo "<br>";
+$ratanplan = new Perro("marron","salchicha", 4);
+echo $ratanplan . "<br>";
+$ratanplan->comer();
+echo "<br>";
+?>
